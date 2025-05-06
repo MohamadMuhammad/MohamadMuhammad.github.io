@@ -1,84 +1,128 @@
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamad Muhammad | Mechatronics Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #111827;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header p {
+      font-size: 1rem;
+      margin: 0.5rem 0 0;
+    }
+    nav {
+      background-color: #1f2937;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+    }
+    nav a {
+      color: #d1d5db;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .skills span {
+      display: inline-block;
+      background-color: #e5e7eb;
+      color: #111827;
+      padding: 0.3rem 0.75rem;
+      margin: 0.25rem;
+      border-radius: 16px;
+      font-size: 0.875rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.875rem;
+      color: #6b7280;
+    }
+    .button-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mohamad Muhammad</h1>
+    <p>Mechatronics Engineering Student @ NJIT</p>
+  </header>
 
-export default function Portfolio() {
-  const [darkMode, setDarkMode] = useState(false);
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  return (
-    <div className={`${darkMode ? "bg-black text-white" : "bg-white text-black"} min-h-screen font-sans`}> 
-      <div className="max-w-4xl mx-auto py-10 px-6">
-        <nav className="flex justify-between items-center mb-6">
-          <div className="flex gap-4 text-lg">
-            <button>About</button>
-            <button>Projects</button>
-            <button>Contact</button>
-            <button>Settings</button>
-          </div>
-        </nav>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a Mechatronics Engineering student passionate about robotics, embedded systems,
+      and real-world engineering solutions. I’m currently building hands-on projects that blend coding with electronics.
+    </p>
+    <p>
+      I'm skilled in C++, Python, and Arduino, and I'm learning CAD tools like SolidWorks and AutoCAD.
+    </p>
+  </section>
 
-        <div className="mb-8">
-          <h1 className="text-3xl font-bold">Hi, I'm Mohamad Muhammad</h1>
-          <p className="mt-2 text-lg">
-            Mechatronics Engineering @ NJIT | Robotics Enthusiast & Embedded Systems Developer
-          </p>
-        </div>
+  <section class="skills">
+    <h2>Skills & Tools</h2>
+    <span>C++</span>
+    <span>Python</span>
+    <span>Arduino</span>
+    <span>SolidWorks</span>
+    <span>AutoCAD</span>
+    <span>Embedded Systems</span>
+    <span>Sensor Integration</span>
+    <span>VS Code</span>
+  </section>
 
-        <div className="flex flex-wrap gap-2 mb-8">
-          {[
-            "C++",
-            "Python",
-            "Arduino",
-            "AutoCAD",
-            "SolidWorks",
-            "Raspberry Pi",
-            "Fusion 360",
-            "Sensor Integration",
-            "VS Code",
-            "Git"
-          ].map((skill) => (
-            <span
-              key={skill}
-              className="px-3 py-1 bg-neutral-800 text-white rounded-full text-sm"
-            >
-              {skill}
-            </span>
-          ))}
-        </div>
+  <section id="projects">
+    <h2>Featured Project</h2>
+    <p><strong>PathSeeker:</strong> Obstacle-avoiding robot that displays real-time sensor data using Arduino and Raspberry Pi.</p>
+    <a href="https://github.com/MohamadMuhammad/PathSeeker" class="button-link">View on GitHub</a>
+  </section>
 
-        <div className="mb-8">
-          <h2 className="text-xl font-semibold mb-2">Projects</h2>
-          <div className="bg-neutral-100 dark:bg-neutral-800 p-4 rounded">
-            <h3 className="font-bold">PathSeeker</h3>
-            <p>
-              Obstacle-avoiding robot with real-time GUI using Arduino + Raspberry Pi.
-            </p>
-          </div>
-        </div>
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <a href="https://www.linkedin.com/in/mohamadmuh/" class="button-link">LinkedIn</a>
+    <a href="mailto:MohamadtMuhammad@outlook.com" class="button-link">Email Me</a>
+  </section>
 
-        <div className="mb-8">
-          <h2 className="text-xl font-semibold mb-2">Contact</h2>
-          <div className="flex gap-4">
-            <a href="https://www.linkedin.com/in/mohamadmuh/" target="_blank">
-              <Button className="bg-blue-600 text-white">LinkedIn</Button>
-            </a>
-            <a href="https://github.com/MohamadMuhammad" target="_blank">
-              <Button className="bg-black text-white">GitHub</Button>
-            </a>
-          </div>
-        </div>
-
-        <div className="mb-4">
-          <h2 className="text-xl font-semibold mb-2">Settings</h2>
-          <div className="flex items-center gap-2">
-            <label>Theme</label>
-            <input
-              type="checkbox"
-              checked={darkMode}
-              onChange={() => setDarkMode(!darkMode)}
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
+  <footer>
+    &copy; 2025 Mohamad Muhammad
+  </footer>
+</body>
+</html>
