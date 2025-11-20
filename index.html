@@ -14,153 +14,146 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#certifications">Certifications</a></li>
+                <!-- Certifications removed from nav -->
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="hero">
             <h1>Mohamad Muhammad</h1>
-            <p class="tagline">Mechatronic Engineering Student</p>
+            <p class="tagline">Mechatronics Engineering Student at NJIT</p>
         </div>
     </header>
 
     <main>
+        <!-- ABOUT -->
         <section id="about">
             <h2>About Me</h2>
             <div class="about-content">
-                <img src="img/profile.jpg" alt="Taha Senturk" class="profile-photo">
-                <p>Hello! I’m a Mechatronics Engineering student at NJIT with a strong interest in robotics, embedded systems, and smart automation. My passion lies in building hands-on projects that bring together hardware, software, and real-world problem solving.</p>
+                <img src="img/profile.jpg" alt="Mohamad Muhammad" class="profile-photo">
+                <p>
+                    Hello! I’m a Mechatronics Engineering student at NJIT with a strong interest in robotics,
+                    embedded systems, and mechanical design. I enjoy taking ideas from paper to real hardware:
+                    designing, assembling, and debugging systems that move, sense, and respond to the real world.
+                </p>
             </div>
         </section>
 
+        <!-- SKILLS (updated to your actual skills) -->
         <section id="skills">
             <h2>Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Programming Languages</h3>
+                    <h3>Mechanical & CAD</h3>
+                    <ul>
+                        <li><i class="fas fa-cube"></i> SolidWorks</li>
+                        <li><i class="fas fa-drafting-compass"></i> AutoCAD</li>
+                        <li><i class="fas fa-tools"></i> Mechanical Systems (pumps, valves, MCCs)</li>
+                        <li><i class="fas fa-industry"></i> Equipment Maintenance & Troubleshooting</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Programming & Software</h3>
                     <ul>
                         <li><i class="fab fa-python"></i> Python</li>
-                        <li><i class="fab fa-js"></i> JavaScript</li>
-                        <li><i class="fab fa-java"></i> Java</li>
-                        <li><i class="fas fa-cog"></i> C++</li>
-                        <li><i class="fas fa-terminal"></i> C</li>
+                        <li><i class="fas fa-code"></i> C++</li>
+                        <li><i class="fas fa-laptop-code"></i> Visual Studio Code</li>
+                        <li><i class="fas fa-brain"></i> PyTorch (introductory)</li>
+                        <li><i class="fas fa-square-root-alt"></i> MATLAB</li>
                     </ul>
                 </div>
+
                 <div class="skill-category">
-                    <h3>Web Technologies</h3>
+                    <h3>Lab & Engineering Tools</h3>
                     <ul>
-                        <li><i class="fab fa-html5"></i> HTML5</li>
-                        <li><i class="fab fa-css3-alt"></i> CSS3/Sass</li>
-                        <li><i class="fab fa-react"></i> React</li>
-                        <li><i class="fab fa-node-js"></i> Node.js</li>
-                        <li><i class="fab fa-python"></i> Flask</li>
+                        <li><i class="fas fa-vial"></i> Wet Lab & Sample Preparation</li>
+                        <li><i class="fas fa-microscope"></i> Instrument Handling & Protocols</li>
+                        <li><i class="fas fa-tachometer-alt"></i> SCADA Monitoring & Data Interpretation</li>
+                        <li><i class="fas fa-project-diagram"></i> Sensor & Telemetry Integration</li>
                     </ul>
                 </div>
+
                 <div class="skill-category">
-                    <h3>System Administration</h3>
+                    <h3>Other</h3>
                     <ul>
-                        <li><i class="fab fa-linux"></i> Linux (Multiple Distributions)</li>
-                        <li><i class="fas fa-server"></i> Apache Server</li>
-                        <li><i class="fas fa-shield-alt"></i> System Security</li>
-                        <li><i class="fab fa-docker"></i> Docker</li>
-                        <li><i class="fas fa-network-wired"></i> Networking</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools & Platforms</h3>
-                    <ul>
-                        <li><i class="fab fa-git-alt"></i> Git/GitHub</li>
-                        <li><i class="fab fa-android"></i> Android Development</li>
-                        <li><i class="fas fa-database"></i> SQL</li>
-                        <li><i class="fas fa-cloud"></i> Terraform</li>
-                        <li><i class="fas fa-robot"></i> AI Integration</li>
+                        <li><i class="fas fa-file-alt"></i> Microsoft Word</li>
+                        <li><i class="fas fa-table"></i> Microsoft Excel</li>
+                        <li><i class="fas fa-language"></i> English &amp; Arabic (Native)</li>
                     </ul>
                 </div>
             </div>
         </section>
 
+        <!-- PROJECTS (FPV Drone fixed) -->
         <section id="projects">
             <h2>Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <h3>FPV Drone</h3>
-                    <img src="img/projects/recipe.jpg" alt="AI Recipe Generator">
-                    <p>A 7 inch FPV drone I built</p>
+                    <h3>Custom 7-Inch FPV Drone</h3>
+                    <!-- Update this image path/name to your actual drone picture -->
+                    <img src="img/projects/fpv-drone.jpg" alt="Custom FPV Drone" />
+                    <p>
+                        Designed, assembled, and tuned a fully functional 7-inch FPV drone from individually
+                        sourced parts, integrating mechanical, electrical, and software components into a
+                        stable, high-performance flying system.
+                    </p>
                     <ul class="project-features">
-                        <li>Hands-on Hardware Assembly</li>
-                        <li>Soldering & Electrical Integration</li>
-                        <li>Embedded Systems Debugging</li>
-                        <li>Remote Control Configuration</li>
-                        <li>Power System Design</li>
-                        
+                        <li>Frame, motor, ESC, and flight controller selection and assembly</li>
+                        <li>Soldering and electrical integration of power and signal lines</li>
+                        <li>Betaflight configuration and tuning for stable flight</li>
+                        <li>Telemetry logging and PID tuning to correct instability</li>
+                        <li>Battery and power system optimization for flight time and performance</li>
                     </ul>
                     <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Flask</span>
-                        <span class="tech-tag">MongoDB</span>
-                        <span class="tech-tag">Gemini AI</span>
-                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Betaflight</span>
+                        <span class="tech-tag">FPV Systems</span>
+                        <span class="tech-tag">Soldering</span>
+                        <span class="tech-tag">PID Tuning</span>
+                        <span class="tech-tag">Mechatronics</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/widkit/girlhacks-2024" class="btn"><i class="fab fa-github"></i> GitHub</a>
-                        <a href="https://www.youtube.com/watch?v=V5nxqGf-lJI" class="btn"><i class="fab fa-youtube"></i> Demo</a>
-                    </div>
-                </div>
-               
-        </section>
-
-        <section id="certifications">
-            <h2>Certifications</h2>
-            <div class="certifications-grid">
-                <div class="certification-card">
-                    <div class="certification-content">
-                        <div class="certification-badge">
-                            <img src="img/certs/lfs101.png" alt="LFS101 Certificate" class="cert-badge-img">
-                        </div>
-                        <div class="certification-details">
-                            <h3>LFS101: Introduction to Linux</h3>
-                            <p>Proficient in navigating and managing configurations across major Linux distributions, utilizing both graphical interface and command line operations effectively. Demonstrated expertise in system administration fundamentals and security practices.</p>
-                            <div class="cert-skills">
-                                <span class="skill-tag">System Configuration</span>
-                                <span class="skill-tag">Command Line</span>
-                                <span class="skill-tag">File Management</span>
-                                <span class="skill-tag">Network Operations</span>
-                                <span class="skill-tag">Shell Scripting</span>
-                                <span class="skill-tag">System Updates</span>
-                                <span class="skill-tag">Root Privileges</span>
-                                <span class="skill-tag">Security Management</span>
-                            </div>
-                            <div class="cert-metadata">
-                                <span><i class="fas fa-certificate"></i> The Linux Foundation</span>
-                                <span><i class="fas fa-layer-group"></i> Foundational</span>
-                                <span><i class="fas fa-clock"></i> 60 Hours</span>
-                            </div>
-                            <div class="cert-verify">
-                                <a href="https://www.credly.com/earner/earned/badge/6033bf44-ec6b-4e12-81b5-9a5216debc4c" target="_blank" class="verify-btn">
-                                    <i class="fas fa-check-circle"></i> Verify Certificate
-                                </a>
-                            </div>
-                        </div>
+                        <!-- If you make a GitHub repo for this later, change this link to that repo -->
+                        <a href="https://github.com/MohamadMuhammad" class="btn" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <!-- Optional: if you ever upload a flight demo, put the YouTube link here.
+                        <a href="YOUR_YOUTUBE_LINK_HERE" class="btn" target="_blank" rel="noopener">
+                            <i class="fab fa-youtube"></i> Flight Demo
+                        </a>
+                        -->
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- CERTIFICATIONS SECTION REMOVED COMPLETELY -->
+
+        <!-- CONTACT -->
         <section id="contact">
             <h2>Contact Me</h2>
             <div class="contact-content">
-                <p>I'm always eager to collaborate on interesting projects and contribute to meaningful initiatives. Whether you're interested in my work or have opportunities to discuss, feel free to reach out!</p>
+                <p>
+                    I’m always open to connecting about engineering, robotics, and hands-on projects.
+                    If you’d like to collaborate, discuss opportunities, or just talk about builds and ideas,
+                    feel free to reach out!
+                </p>
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/mohamadmuh/"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/MohamadMuhammad"><i class="fab fa-github"></i></a>
-                    <a href="mailto:Mohamadtmuhammad@outlook.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/mohamadmuh/" target="_blank" rel="noopener">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/MohamadMuhammad" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:MohamadtMuhammad@outlook.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Taha Senturk | Computer Science '28 | NJIT</p>
+        <p>&copy; 2024 Mohamad Muhammad | Mechatronics Engineering | NJIT</p>
     </footer>
 </body>
 </html>
